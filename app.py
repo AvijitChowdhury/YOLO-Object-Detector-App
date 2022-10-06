@@ -6,7 +6,7 @@ def object_main():
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
-    st.title("YOLOv3 Object Detection")
+    st.title("YOLOv3 Object Detection App")
     introduction = open("intro.txt", "r")
     st.write(str(introduction.read()))
 
