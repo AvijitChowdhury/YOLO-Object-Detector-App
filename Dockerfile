@@ -24,7 +24,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
-
+RUN wget https://pjreddie.com/media/files/yolov3.weights -P /model
 
 # CMD streamlit run app.py
 
