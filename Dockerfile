@@ -28,5 +28,4 @@ EXPOSE 8501
 
 # # CMD streamlit run app.py
 
-
-CMD CMD streamlit run --server.port $PORT app.py
+CMD streamlit run --server.port $PORT app.py
