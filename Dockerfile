@@ -1,7 +1,9 @@
 FROM python:3.8-slim-buster
 EXPOSE 8501
-RUN apt-get update -y
-RUN apt install libgl1-mesa-glx wget libglib2.0-0 -y
+# RUN apt-get update -y
+# RUN apt install libgl1-mesa-glx wget libglib2.0-0 -y
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
