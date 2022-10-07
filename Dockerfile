@@ -1,5 +1,5 @@
 FROM python:3.8-slim-buster
-
+EXPOSE 8501
 RUN apt-get update -y
 RUN apt install libgl1-mesa-glx wget libglib2.0-0 -y
 
@@ -11,7 +11,7 @@ WORKDIR /app
 
 RUN wget https://pjreddie.com/media/files/yolov3-tiny.weights -P /model
 
-EXPOSE 8501
+
 # FROM python:3.8.2-slim
 # EXPOSE 8501
 # WORKDIR /app
