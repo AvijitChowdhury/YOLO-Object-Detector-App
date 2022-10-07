@@ -7,7 +7,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 
-WORKDIR .
+WORKDIR /app
 
 RUN wget https://pjreddie.com/media/files/yolov3-tiny.weights -P /model
 
